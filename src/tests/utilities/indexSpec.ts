@@ -1,4 +1,3 @@
-import path from "path";
 import { resize, getImagePath } from "./../../utilities";
 
 describe("Test resize function", () => {
