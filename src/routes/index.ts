@@ -22,7 +22,7 @@ router.get('/convert', validateParams, async (req: Request, res: Response) => {
     resize(input, { width: +width, height: +height }).then(async (data) => {
         await fs.writeFile(output, data);
          res.status(200).sendFile(output);        
-    }).catch(err => res.status(404).json({code:404,message:err}))
+    });
   }
 })
 

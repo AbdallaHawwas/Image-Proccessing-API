@@ -27,8 +27,9 @@ const validateParams = (req: Request, res: Response, next: NextFunction) => {
       code: 404,
       message: messages.join(","),
     })
-  } 
+  } else {
     next()
+  }
   
 }
 
